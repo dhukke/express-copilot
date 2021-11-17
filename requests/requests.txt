@@ -1,0 +1,31 @@
+# urls to test using rest client
+
+GET http://localhost:3000/users/
+
+### 
+
+POST http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+{
+  "name": "first",
+  "age": 21
+}
+
+###
+
+GET http://localhost:3000/users/61959375287e374948bb9b1b
+
+### 
+
+PUT http://localhost:3000/users/61959375287e374948bb9b1b HTTP/1.1
+content-type: application/json
+
+{
+  "name": "used to be first",
+  "age": 22
+}
+
+### 
+
+DELETE http://localhost:3000/users/61959375287e374948bb9b1b
